@@ -1,0 +1,40 @@
+Name:		cd2cloud
+Version:	@RPM_VERSION@
+Release:	@RPM_RELEASE@
+Summary:	Convert your CD music to mp3 and move directly to your own cloud
+Group:		Applications/Tools
+License:	GPL3+
+Source0:	http://github.com/eduardocerqueira/cd2cloud/%{name}-%{version}.tar.gz
+
+BuildRequires:  python-setuptools
+Requires:       python
+Requires:		abcde
+Requires:		pycdio
+
+%global debug_package %{nil}
+
+%description
+cd2cloud is a Linux tool to convert CD audio to mp3 digital files and move to your own cloud
+
+%prep
+%setup -q -n %{name}
+
+%build
+%{__python} setup.py build
+
+%install
+%{__python} setup.py install -O1 --skip-build --root %{buildroot}
+mkdir -p %{buildroot}/%{_mandir}/man1
+cp cd2cloud.1 %{buildroot}/%{_mandir}/man1/cd2cloud.1
+
+%files
+%defattr(755,root,root,755)
+%{python_sitelib}/cd2cloud*
+%attr (755,root,root)/usr/bin/cd2cloud
+%doc README.md
+%doc AUTHORS
+%{_mandir}/man1/cd2cloud.1.gz
+
+%changelog
+* Sun Oct 30 2016 Eduardo Cerqueira <eduardomcerqueira@gmail.com> - 0.0.1
+- initial build

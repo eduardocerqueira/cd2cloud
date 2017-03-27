@@ -1,0 +1,2 @@
+sudo dnf instal pycdio
+sudo dnf install abcde
