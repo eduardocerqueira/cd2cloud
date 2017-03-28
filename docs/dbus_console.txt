@@ -1,0 +1,120 @@
+ARGS
+ (dbus.String(u':1.205'),)
+************************************************************
+KWARGS
+ {'member': 'NameAcquired', 'dbus_interface': 'org.freedesktop.DBus'}
+--------------------------------------------------------------------------------
+ARGS
+ (dbus.String(u'org.gtk.vfs.UDisks2VolumeMonitor'), dbus.String(u'0x563bdf166200'), dbus.Struct((dbus.String(u'0x563bdf166200'), dbus.String(u'Toshiba SuperMultiPA3761'), dbus.String(u'. GThemedIcon drive-optical drive'), dbus.String(u'. GThemedIcon drive-optical-symbolic drive-symbolic drive-optical drive'), dbus.Boolean(True), dbus.Boolean(False), dbus.Boolean(True), dbus.Boolean(True), dbus.Boolean(True), dbus.Boolean(False), dbus.Boolean(False), dbus.Boolean(False), dbus.UInt32(1L), dbus.Array([], signature=dbus.Signature('s')), dbus.Dictionary({dbus.String(u'unix-device'): dbus.String(u'/dev/sr0')}, signature=dbus.Signature('ss')), dbus.String(u'00coldplug/11removable/sr0'), dbus.Dictionary({dbus.String(u'is-removable'): dbus.Boolean(True, variant_level=1)}, signature=dbus.Signature('sv'))), signature=None))
+************************************************************
+KWARGS
+ {'member': 'DriveChanged', 'dbus_interface': 'org.gtk.Private.RemoteVolumeMonitor'}
+--------------------------------------------------------------------------------
+ARGS
+ (dbus.String(u'org.gtk.vfs.UDisks2VolumeMonitor'), dbus.String(u'0x563bdf166200'), dbus.Struct((dbus.String(u'0x563bdf166200'), dbus.String(u'Toshiba SuperMultiPA3761'), dbus.String(u'. GThemedIcon drive-optical drive'), dbus.String(u'. GThemedIcon drive-optical-symbolic drive-symbolic drive-optical drive'), dbus.Boolean(True), dbus.Boolean(False), dbus.Boolean(True), dbus.Boolean(True), dbus.Boolean(True), dbus.Boolean(False), dbus.Boolean(False), dbus.Boolean(False), dbus.UInt32(1L), dbus.Array([dbus.String(u'0x563bdf144510')], signature=dbus.Signature('s')), dbus.Dictionary({dbus.String(u'unix-device'): dbus.String(u'/dev/sr0')}, signature=dbus.Signature('ss')), dbus.String(u'00coldplug/11removable/sr0'), dbus.Dictionary({dbus.String(u'is-removable'): dbus.Boolean(True, variant_level=1)}, signature=dbus.Signature('sv'))), signature=None))
+************************************************************
+KWARGS
+ {'member': 'DriveChanged', 'dbus_interface': 'org.gtk.Private.RemoteVolumeMonitor'}
+--------------------------------------------------------------------------------
+ARGS
+ (dbus.String(u'org.gtk.vfs.UDisks2VolumeMonitor'), dbus.String(u'0x563bdf144510'), dbus.Struct((dbus.String(u'0x563bdf144510'), dbus.String(u'Audio Disc'), dbus.String(u'. GThemedIcon media-optical-cd-rom media-optical-cd media-optical media'), dbus.String(u'. GThemedIcon media-optical-symbolic media-symbolic media-optical media'), dbus.String(u''), dbus.String(u'cdda://sr0/'), dbus.Boolean(True), dbus.Boolean(True), dbus.String(u'0x563bdf166200'), dbus.String(u''), dbus.Dictionary({dbus.String(u'unix-device'): dbus.String(u'/dev/sr0'), dbus.String(u'class'): dbus.String(u'device')}, signature=dbus.Signature('ss')), dbus.String(u'gvfs.time_detected_usec.1490415231646886'), dbus.Dictionary({}, signature=dbus.Signature('sv'))), signature=None))
+************************************************************
+KWARGS
+ {'member': 'VolumeAdded', 'dbus_interface': 'org.gtk.Private.RemoteVolumeMonitor'}
+--------------------------------------------------------------------------------
+ARGS
+ (dbus.String(u':1.206'), dbus.String(u''), dbus.String(u':1.206'))
+************************************************************
+KWARGS
+ {'member': 'NameOwnerChanged', 'dbus_interface': 'org.freedesktop.DBus'}
+--------------------------------------------------------------------------------
+ARGS
+ (dbus.String(u':1.206'), dbus.String(u':1.206'), dbus.String(u''))
+************************************************************
+KWARGS
+ {'member': 'NameOwnerChanged', 'dbus_interface': 'org.freedesktop.DBus'}
+--------------------------------------------------------------------------------
+ARGS
+ (dbus.String(u':1.207'), dbus.String(u''), dbus.String(u':1.207'))
+************************************************************
+KWARGS
+ {'member': 'NameOwnerChanged', 'dbus_interface': 'org.freedesktop.DBus'}
+--------------------------------------------------------------------------------
+ARGS
+ (dbus.String(u'org.gtk.vfs.mountpoint_8293'), dbus.String(u''), dbus.String(u':1.207'))
+************************************************************
+KWARGS
+ {'member': 'NameOwnerChanged', 'dbus_interface': 'org.freedesktop.DBus'}
+--------------------------------------------------------------------------------
+ARGS
+ (dbus.Struct((dbus.String(u':1.207'), dbus.ObjectPath('/org/gtk/vfs/mount/1'), dbus.String(u'Audio Disc'), dbus.String(u'cdda:host=sr0'), dbus.String(u'x-content/audio-cdda'), dbus.String(u'. GThemedIcon media-optical-audio media-optical media'), dbus.String(u'. GThemedIcon media-optical-symbolic media-symbolic media-optical media'), dbus.String(u''), dbus.Boolean(True), dbus.Array([dbus.Byte(47), dbus.Byte(114), dbus.Byte(117), dbus.Byte(110), dbus.Byte(47), dbus.Byte(117), dbus.Byte(115), dbus.Byte(101), dbus.Byte(114), dbus.Byte(47), dbus.Byte(49), dbus.Byte(48), dbus.Byte(48), dbus.Byte(48), dbus.Byte(47), dbus.Byte(103), dbus.Byte(118), dbus.Byte(102), dbus.Byte(115), dbus.Byte(47), dbus.Byte(99), dbus.Byte(100), dbus.Byte(100), dbus.Byte(97), dbus.Byte(58), dbus.Byte(104), dbus.Byte(111), dbus.Byte(115), dbus.Byte(116), dbus.Byte(61), dbus.Byte(115), dbus.Byte(114), dbus.Byte(48), dbus.Byte(0)], signature=dbus.Signature('y')), dbus.Struct((dbus.Array([dbus.Byte(47), dbus.Byte(0)], signature=dbus.Signature('y')), dbus.Dictionary({dbus.String(u'host'): dbus.Array([dbus.Byte(115), dbus.Byte(114), dbus.Byte(48), dbus.Byte(0)], signature=dbus.Signature('y'), variant_level=1), dbus.String(u'type'): dbus.Array([dbus.Byte(99), dbus.Byte(100), dbus.Byte(100), dbus.Byte(97), dbus.Byte(0)], signature=dbus.Signature('y'), variant_level=1)}, signature=dbus.Signature('sv'))), signature=None), dbus.Array([dbus.Byte(0)], signature=dbus.Signature('y'))), signature=None),)
+************************************************************
+KWARGS
+ {'member': 'Mounted', 'dbus_interface': 'org.gtk.vfs.MountTracker'}
+--------------------------------------------------------------------------------
+ARGS
+ (dbus.String(u'/org/gnome/desktop/notifications/application/org-gnome-nautilus/application-id'), dbus.Array([dbus.String(u'')], signature=dbus.Signature('s')), dbus.String(u':1.47:user:26'))
+************************************************************
+KWARGS
+ {'member': 'Notify', 'dbus_interface': 'ca.desrt.dconf.Writer'}
+--------------------------------------------------------------------------------
+ARGS
+ (dbus.Struct((dbus.String(u':1.207'), dbus.ObjectPath('/org/gtk/vfs/mount/1'), dbus.String(u'Audio Disc'), dbus.String(u'cdda:host=sr0'), dbus.String(u'x-content/audio-cdda'), dbus.String(u'. GThemedIcon media-optical-audio media-optical media'), dbus.String(u'. GThemedIcon media-optical-symbolic media-symbolic media-optical media'), dbus.String(u''), dbus.Boolean(True), dbus.Array([dbus.Byte(47), dbus.Byte(114), dbus.Byte(117), dbus.Byte(110), dbus.Byte(47), dbus.Byte(117), dbus.Byte(115), dbus.Byte(101), dbus.Byte(114), dbus.Byte(47), dbus.Byte(49), dbus.Byte(48), dbus.Byte(48), dbus.Byte(48), dbus.Byte(47), dbus.Byte(103), dbus.Byte(118), dbus.Byte(102), dbus.Byte(115), dbus.Byte(47), dbus.Byte(99), dbus.Byte(100), dbus.Byte(100), dbus.Byte(97), dbus.Byte(58), dbus.Byte(104), dbus.Byte(111), dbus.Byte(115), dbus.Byte(116), dbus.Byte(61), dbus.Byte(115), dbus.Byte(114), dbus.Byte(48), dbus.Byte(0)], signature=dbus.Signature('y')), dbus.Struct((dbus.Array([dbus.Byte(47), dbus.Byte(0)], signature=dbus.Signature('y')), dbus.Dictionary({dbus.String(u'host'): dbus.Array([dbus.Byte(115), dbus.Byte(114), dbus.Byte(48), dbus.Byte(0)], signature=dbus.Signature('y'), variant_level=1), dbus.String(u'type'): dbus.Array([dbus.Byte(99), dbus.Byte(100), dbus.Byte(100), dbus.Byte(97), dbus.Byte(0)], signature=dbus.Signature('y'), variant_level=1)}, signature=dbus.Signature('sv'))), signature=None), dbus.Array([dbus.Byte(0)], signature=dbus.Signature('y'))), signature=None),)
+************************************************************
+KWARGS
+ {'member': 'Unmounted', 'dbus_interface': 'org.gtk.vfs.MountTracker'}
+--------------------------------------------------------------------------------
+ARGS
+ (dbus.String(u'org.gtk.vfs.UDisks2VolumeMonitor'), dbus.String(u'0x563bdf166200'), dbus.Struct((dbus.String(u'0x563bdf166200'), dbus.String(u'Toshiba SuperMultiPA3761'), dbus.String(u'. GThemedIcon drive-optical drive'), dbus.String(u'. GThemedIcon drive-optical-symbolic drive-symbolic drive-optical drive'), dbus.Boolean(True), dbus.Boolean(False), dbus.Boolean(False), dbus.Boolean(True), dbus.Boolean(True), dbus.Boolean(False), dbus.Boolean(False), dbus.Boolean(False), dbus.UInt32(1L), dbus.Array([dbus.String(u'0x563bdf144510')], signature=dbus.Signature('s')), dbus.Dictionary({dbus.String(u'unix-device'): dbus.String(u'/dev/sr0')}, signature=dbus.Signature('ss')), dbus.String(u'00coldplug/11removable/sr0'), dbus.Dictionary({dbus.String(u'is-removable'): dbus.Boolean(True, variant_level=1)}, signature=dbus.Signature('sv'))), signature=None))
+************************************************************
+KWARGS
+ {'member': 'DriveChanged', 'dbus_interface': 'org.gtk.Private.RemoteVolumeMonitor'}
+--------------------------------------------------------------------------------
+ARGS
+ (dbus.String(u'org.gtk.vfs.UDisks2VolumeMonitor'), dbus.String(u'0x563bdf166200'), dbus.Struct((dbus.String(u'0x563bdf166200'), dbus.String(u'Toshiba SuperMultiPA3761'), dbus.String(u'. GThemedIcon drive-optical-recorder drive-optical drive'), dbus.String(u'. GThemedIcon drive-optical-symbolic drive-symbolic drive-optical drive'), dbus.Boolean(True), dbus.Boolean(False), dbus.Boolean(False), dbus.Boolean(True), dbus.Boolean(True), dbus.Boolean(False), dbus.Boolean(False), dbus.Boolean(False), dbus.UInt32(1L), dbus.Array([dbus.String(u'0x563bdf144510')], signature=dbus.Signature('s')), dbus.Dictionary({dbus.String(u'unix-device'): dbus.String(u'/dev/sr0')}, signature=dbus.Signature('ss')), dbus.String(u'00coldplug/11removable/sr0'), dbus.Dictionary({dbus.String(u'is-removable'): dbus.Boolean(True, variant_level=1)}, signature=dbus.Signature('sv'))), signature=None))
+************************************************************
+KWARGS
+ {'member': 'DriveChanged', 'dbus_interface': 'org.gtk.Private.RemoteVolumeMonitor'}
+--------------------------------------------------------------------------------
+ARGS
+ (dbus.String(u'org.gtk.vfs.UDisks2VolumeMonitor'), dbus.String(u'0x563bdf166200'), dbus.Struct((dbus.String(u'0x563bdf166200'), dbus.String(u'Toshiba SuperMultiPA3761'), dbus.String(u'. GThemedIcon drive-removable-media-usb drive-removable-media drive-removable drive'), dbus.String(u'. GThemedIcon drive-removable-media-usb-symbolic drive-removable-media-symbolic drive-removable-symbolic drive-symbolic drive-removable-media-usb drive-removable-media drive-removable drive'), dbus.Boolean(True), dbus.Boolean(False), dbus.Boolean(False), dbus.Boolean(True), dbus.Boolean(True), dbus.Boolean(False), dbus.Boolean(False), dbus.Boolean(False), dbus.UInt32(1L), dbus.Array([dbus.String(u'0x563bdf144510')], signature=dbus.Signature('s')), dbus.Dictionary({dbus.String(u'unix-device'): dbus.String(u'/dev/sr0')}, signature=dbus.Signature('ss')), dbus.String(u'00coldplug/11removable/sr0'), dbus.Dictionary({dbus.String(u'is-removable'): dbus.Boolean(True, variant_level=1)}, signature=dbus.Signature('sv'))), signature=None))
+************************************************************
+KWARGS
+ {'member': 'DriveChanged', 'dbus_interface': 'org.gtk.Private.RemoteVolumeMonitor'}
+--------------------------------------------------------------------------------
+ARGS
+ (dbus.String(u'org.gtk.vfs.UDisks2VolumeMonitor'), dbus.String(u'0x563bdf166200'), dbus.Struct((dbus.String(u'0x563bdf166200'), dbus.String(u'Toshiba SuperMultiPA3761'), dbus.String(u'. GThemedIcon drive-optical drive'), dbus.String(u'. GThemedIcon drive-optical-symbolic drive-symbolic drive-optical drive'), dbus.Boolean(True), dbus.Boolean(False), dbus.Boolean(False), dbus.Boolean(True), dbus.Boolean(True), dbus.Boolean(False), dbus.Boolean(False), dbus.Boolean(False), dbus.UInt32(1L), dbus.Array([dbus.String(u'0x563bdf144510')], signature=dbus.Signature('s')), dbus.Dictionary({dbus.String(u'unix-device'): dbus.String(u'/dev/sr0')}, signature=dbus.Signature('ss')), dbus.String(u'00coldplug/11removable/sr0'), dbus.Dictionary({dbus.String(u'is-removable'): dbus.Boolean(True, variant_level=1)}, signature=dbus.Signature('sv'))), signature=None))
+************************************************************
+KWARGS
+ {'member': 'DriveChanged', 'dbus_interface': 'org.gtk.Private.RemoteVolumeMonitor'}
+--------------------------------------------------------------------------------
+ARGS
+ (dbus.String(u'org.gtk.vfs.UDisks2VolumeMonitor'), dbus.String(u'0x563bdf144510'), dbus.Struct((dbus.String(u'0x563bdf144510'), dbus.String(u'Audio Disc'), dbus.String(u'. GThemedIcon drive-optical drive'), dbus.String(u'. GThemedIcon drive-optical-symbolic drive-symbolic drive-optical drive'), dbus.String(u''), dbus.String(u'cdda://sr0/'), dbus.Boolean(True), dbus.Boolean(False), dbus.String(u'0x563bdf166200'), dbus.String(u''), dbus.Dictionary({dbus.String(u'unix-device'): dbus.String(u'/dev/sr0'), dbus.String(u'class'): dbus.String(u'device')}, signature=dbus.Signature('ss')), dbus.String(u'gvfs.time_detected_usec.1490415231646886'), dbus.Dictionary({}, signature=dbus.Signature('sv'))), signature=None))
+************************************************************
+KWARGS
+ {'member': 'VolumeChanged', 'dbus_interface': 'org.gtk.Private.RemoteVolumeMonitor'}
+--------------------------------------------------------------------------------
+ARGS
+ (dbus.String(u'org.gtk.vfs.UDisks2VolumeMonitor'), dbus.String(u'0x563bdf166200'), dbus.Struct((dbus.String(u'0x563bdf166200'), dbus.String(u'Toshiba SuperMultiPA3761'), dbus.String(u'. GThemedIcon drive-optical drive'), dbus.String(u'. GThemedIcon drive-optical-symbolic drive-symbolic drive-optical drive'), dbus.Boolean(True), dbus.Boolean(False), dbus.Boolean(False), dbus.Boolean(True), dbus.Boolean(True), dbus.Boolean(False), dbus.Boolean(False), dbus.Boolean(False), dbus.UInt32(1L), dbus.Array([], signature=dbus.Signature('s')), dbus.Dictionary({dbus.String(u'unix-device'): dbus.String(u'/dev/sr0')}, signature=dbus.Signature('ss')), dbus.String(u'00coldplug/11removable/sr0'), dbus.Dictionary({dbus.String(u'is-removable'): dbus.Boolean(True, variant_level=1)}, signature=dbus.Signature('sv'))), signature=None))
+************************************************************
+KWARGS
+ {'member': 'DriveChanged', 'dbus_interface': 'org.gtk.Private.RemoteVolumeMonitor'}
+--------------------------------------------------------------------------------
+ARGS
+ (dbus.String(u'org.gtk.vfs.UDisks2VolumeMonitor'), dbus.String(u'0x563bdf144510'), dbus.Struct((dbus.String(u'0x563bdf144510'), dbus.String(u'Audio Disc'), dbus.String(u'. GThemedIcon drive-optical drive'), dbus.String(u'. GThemedIcon drive-optical-symbolic drive-symbolic drive-optical drive'), dbus.String(u''), dbus.String(u'cdda://sr0/'), dbus.Boolean(True), dbus.Boolean(False), dbus.String(u''), dbus.String(u''), dbus.Dictionary({dbus.String(u'unix-device'): dbus.String(u'/dev/sr0'), dbus.String(u'class'): dbus.String(u'device')}, signature=dbus.Signature('ss')), dbus.String(u'gvfs.time_detected_usec.1490415231646886'), dbus.Dictionary({}, signature=dbus.Signature('sv'))), signature=None))
+************************************************************
+KWARGS
+ {'member': 'VolumeRemoved', 'dbus_interface': 'org.gtk.Private.RemoteVolumeMonitor'}
+--------------------------------------------------------------------------------
+ARGS
+ (dbus.String(u'org.gtk.vfs.mountpoint_8293'), dbus.String(u':1.207'), dbus.String(u''))
+************************************************************
+KWARGS
+ {'member': 'NameOwnerChanged', 'dbus_interface': 'org.freedesktop.DBus'}
+--------------------------------------------------------------------------------
+ARGS
+ (dbus.String(u':1.207'), dbus.String(u':1.207'), dbus.String(u''))
+************************************************************
+KWARGS
+ {'member': 'NameOwnerChanged', 'dbus_interface': 'org.freedesktop.DBus'}
+--------------------------------------------------------------------------------

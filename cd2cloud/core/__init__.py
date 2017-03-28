@@ -18,9 +18,10 @@ from cd2cloud.util.logger import Log
 from cd2cloud.util import CalcTime
 from cd2cloud.core.CDMonitor import CDMonitor
 from cd2cloud.core.Worker import Worker
+from cd2cloud.core.Notification import Notification
 from logging import getLogger
-import cdio
-import pycdio
+import CDDB
+import DiscID
 
 
 class CD2Cloud():
@@ -52,6 +53,10 @@ class CD2Cloud():
         """Start CD2Cloud pipeline"""
         self.converter.start_monitor()
 
+    def stop(self):
+        """Stop CD2Cloud pipeline"""
+        self.converter.stop_monitor()
+
 
 class CDConverter():
     def __init__(self, args):
@@ -69,21 +74,12 @@ class CDConverter():
     def is_cd_ready(self=None):
         """Check if CD (drive) is accessible and if there an not empty
         CDROM (media) inserted and ready"""
-        # CD-ROM device
         try:
-            d = cdio.Device(driver_id=pycdio.DRIVER_UNKNOWN)
-            drive_path = d.get_device()
-            self.log.info("device %s" % drive_path)
-        except (IOError, Exception) as ex:
-            self.log.error("CD-ROM not accessible %s" % ex)
-
-        # CD Media
-        try:
-            i_tracks = d.get_num_tracks()
-            self.log.info("number of tracks %d" % i_tracks)
+            cdrom = DiscID.open()
+            disc_id = DiscID.disc_id(cdrom)
             return True
-        except (IOError, Exception) as ex:
-            self.log.warn("No media inserted %s" % ex)
+        except:
+            self.log.warn('no disc in CD drive')
             return False
 
     def cd_rip(self, device):
@@ -91,21 +87,31 @@ class CDConverter():
         self.log.debug(device.device_path)
 
         if self.is_cd_ready():
-            self.log.info("Starting CD ripping")
-            rip_workdir = get_config(self.args.conf, 'Ripping', 'workdir')
-            ripper = Worker(rip_workdir)
-            cd2cloud_cfg = get_config(self.args.conf, 'Ripping', 'abcde_conf')
-            #cmd = 'abcde -c %s -N' % cd2cloud_cfg
-            cmd = 'cat %s && sleep 20' % cd2cloud_cfg
-            ripper.thread(cmd)
-            self.log.info("Complete CD ripping")
-            self.copy()
+            try:
+                # cddb
+                cd_title = None
+                cdrom = DiscID.open()
+                disc_id = DiscID.disc_id(cdrom)
+                (query_status, query_info) = CDDB.query(disc_id)
+                if query_status == 200:
+                    cd_title = query_info['title'][:20]
 
-    def copy(self):
-        self.log.info("Starting copying to cloud")
-        self.log.info("Complete copying to cloud")
-        self.notify()
+                self.log.info("Starting CD ripping for %s" % cd_title)
+                rip_workdir = get_config(self.args.conf, 'Ripping', 'workdir')
+                ripper = Worker(rip_workdir)
+                cd2cloud_cfg = get_config(self.args.conf, 'Ripping', 'abcde_conf')
+                cmd = 'abcde -c %s -j 5 -N' % cd2cloud_cfg
 
-    def notify(self):
+                #ripper.thread(cmd)
+                ripper.run_cmd(cmd)
+                self.log.info("Complete CD ripping for %s" % cd_title)
+                self.notify(cd_title)
+            except:
+                msg = 'FAILED %s' % cd_title
+                self.notify(msg)
+
+    def notify(self, msg):
         self.log.info("Starting notify")
+        notify = Notification()
+        notify.gnome(msg)
         self.log.info("Complete notify")

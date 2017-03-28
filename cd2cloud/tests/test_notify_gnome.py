@@ -1,3 +1,5 @@
+# -*- coding: UTF-8 -*-
+
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -13,24 +15,15 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-from cd2cloud.core import CD2Cloud
-import sys
+from subprocess import Popen, PIPE
 
-def main():
-    try:
-        cd = CD2Cloud()
-        cd.start()
-
-    except Exception:
-        cd.stop()
-
-    except (KeyboardInterrupt, SystemExit):
-        sys.exit(1)
+def notify_gnome():
+    title = "Paulo Moura & Yamandú Costa-El Negro Del Blanco"
+    cmd = "notify-send --icon=/usr/share/pixmaps/disks.png \"cd2cloud\" \"%s\" " % title
+    print "Running cmd: %s" % cmd
+    proc = Popen(cmd, stdout=PIPE, shell=True)
+#(output, err) = proc.communicate()
+#p_status = proc.wait()
 
 if __name__ == '__main__':
-    main()
-#     finally:
-#         # End execution
-#         cd.calctime.end()
-#         hours, minutes, seconds = cd.calctime.delta()
-#         cd.log.info("End execution in %dh:%dm:%ds", hours, minutes, seconds)
+    notify_gnome()

@@ -40,8 +40,9 @@ class Worker():
                      stdout=PIPE,
                      stderr=PIPE,
                      cwd=self.rip_workdir)
+        self.log.info('running cmd: %s' % cmd)
         while proc.poll() is None:
-            line = proc.stdout.readline()
+            line = proc.stdout.readline().rstrip()
             self.log.info(line)
 
         #(output, err) = proc.communicate()

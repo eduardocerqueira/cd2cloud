@@ -1,0 +1,42 @@
+udisksctl info -b /dev/sr0
+dbus-monitor
+wodim --devices
+cd-discid
+dmesg -wH
+
+-- cd ripping
+abcde -c ../conf/mp3.conf -j 2 -N
+
+
+LINKS
+
+#
+# https://linuxmeerkat.wordpress.com/2014/11/12/python-detection-of-usb-storage-device/
+# https://dbus.freedesktop.org/doc/dbus-python/api/dbus.bus.BusConnection-class.html
+# http://mindbending.org/en/python-and-udisks-part-5
+# https://udisks.freedesktop.org/docs/latest/gdbus-org.freedesktop.UDisks2.Block.html
+
+By rule in /etc/udev/rules.d/
+https://help.ubuntu.com/community/UsbDriveDoSomethingHowto
+
+
+$ d-feet
+D-Feet is an easy to use D-Bus debugger. D-Feet can be used to inspect D-Bus interfaces of running programs and invoke methods on those interfaces.
+https://wiki.gnome.org/Apps/DFeet/
+
+
+
+---DBUS----
+https://dbus.freedesktop.org/doc/dbus-python/doc/tutorial.html
+
+dbus-send --session --print-reply --dest=org.bansheeproject.Banshee /org/bansheeproject/Banshee/PlayerEngine org.bansheeproject.Banshee.PlayerEngine.Pause
+notify-send --icon=/usr/share/pixmaps/disks.png "My title" "Hello World"
+dbus-monitor
+
+
+# Mounting internal home cloud
+sudo mount -t cifs -o username=eduardo,password=******** //10.10.2.8/Public/Music /mnt/cloud/
+
+-- need these two packages for CD cover
+sudo dnf install ftp://ftp.gwdg.de/pub/opensuse/repositories/home:/zhonghuaren/Fedora_25/x86_64/libglyr-0.9.9-7.2.x86_64.rpm
+sudo dnf install ftp://ftp.gwdg.de/pub/opensuse/repositories/home:/zhonghuaren/Fedora_25/x86_64/glyr-0.9.9-7.2.x86_64.rpm

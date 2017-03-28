@@ -24,6 +24,7 @@ help:
 	@echo "srpm      generate SRPM file"
 	@echo "all       clean test doc rpm"
 	@echo "flake8    check Python style based on flake8"
+	@echo "dev       short cut for devel, see Makefile"
 	@echo
 
 all: clean test doc rpm
@@ -67,6 +68,18 @@ srpm: tarball
 rpm: srpm
 	rpmbuild --define="_topdir $(RPMTOP)" --rebuild $(RPMTOP)/SRPMS/$(SRPM)
 
+git:
+	git status
+	git add .
+
+# build local rpm, remove previous, install new and print cd2cloud version
+dev: clean git rpm
+ifneq ("$(wildcard /usr/bin/paws)","")
+	sudo dnf remove cd2cloud -y > /dev/null
+endif
+	sudo dnf install $(shell bash -c "find $(RPMTOP)/RPMS/ -name '$(NAME)-$(VERSION)-$(RELEASE)*'") -y > /dev/null
+	echo "Ready to GO!"
+
 # Unit tests
 TEST_SOURCE=tests
 TEST_OUTPUT=$(RPMTOP)/TESTS
@@ -82,4 +95,3 @@ FLAKE8_CONFIG_DIR=tox.ini
 
 flake8:
 	flake8 $(CHECK_DIRS) --config=$(FLAKE8_CONFIG_DIR)
-

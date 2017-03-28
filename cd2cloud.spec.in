@@ -10,6 +10,11 @@ BuildRequires:  python-setuptools
 Requires:       python
 Requires:		abcde
 Requires:		pycdio
+Requires:		python2-libdiscid
+Requires:		python-CDDB
+Requires:		libglyr
+Requires:		glyr
+Requires:		ImageMagick
 
 %global debug_package %{nil}
 

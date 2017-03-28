@@ -1,0 +1,24 @@
+ARGS
+ (dbus.String(u'org.gtk.vfs.UDisks2VolumeMonitor'), dbus.String(u'0x563bdf166200'), dbus.Struct((dbus.String(u'0x563bdf166200'), dbus.String(u'Toshiba SuperMultiPA3761'), dbus.String(u'. GThemedIcon drive-optical drive'), dbus.String(u'. GThemedIcon drive-optical-symbolic drive-symbolic drive-optical drive'), dbus.Boolean(True), dbus.Boolean(False), dbus.Boolean(True), dbus.Boolean(True), dbus.Boolean(True), dbus.Boolean(False), dbus.Boolean(False), dbus.Boolean(False), dbus.UInt32(1L), dbus.Array([], signature=dbus.Signature('s')), dbus.Dictionary({dbus.String(u'unix-device'): dbus.String(u'/dev/sr0')}, signature=dbus.Signature('ss')), dbus.String(u'00coldplug/11removable/sr0'), dbus.Dictionary({dbus.String(u'is-removable'): dbus.Boolean(True, variant_level=1)}, signature=dbus.Signature('sv'))), signature=None))
+************************************************************
+KWARGS
+ {'member': 'DriveChanged', 'dbus_interface': 'org.gtk.Private.RemoteVolumeMonitor'}
+--------------------------------------------------------------------------------
+ARGS
+ (dbus.String(u'org.gtk.vfs.UDisks2VolumeMonitor'), dbus.String(u'0x563bdf166200'), dbus.Struct((dbus.String(u'0x563bdf166200'), dbus.String(u'Toshiba SuperMultiPA3761'), dbus.String(u'. GThemedIcon drive-optical drive'), dbus.String(u'. GThemedIcon drive-optical-symbolic drive-symbolic drive-optical drive'), dbus.Boolean(True), dbus.Boolean(False), dbus.Boolean(True), dbus.Boolean(True), dbus.Boolean(True), dbus.Boolean(False), dbus.Boolean(False), dbus.Boolean(False), dbus.UInt32(1L), dbus.Array([dbus.String(u'0x563bdf144470')], signature=dbus.Signature('s')), dbus.Dictionary({dbus.String(u'unix-device'): dbus.String(u'/dev/sr0')}, signature=dbus.Signature('ss')), dbus.String(u'00coldplug/11removable/sr0'), dbus.Dictionary({dbus.String(u'is-removable'): dbus.Boolean(True, variant_level=1)}, signature=dbus.Signature('sv'))), signature=None))
+************************************************************
+KWARGS
+ {'member': 'DriveChanged', 'dbus_interface': 'org.gtk.Private.RemoteVolumeMonitor'}
+--------------------------------------------------------------------------------
+ARGS
+ (dbus.String(u'org.gtk.vfs.UDisks2VolumeMonitor'), dbus.String(u'0x563bdf166200'), dbus.Struct((dbus.String(u'0x563bdf166200'), dbus.String(u'Toshiba SuperMultiPA3761'), dbus.String(u'. GThemedIcon drive-optical drive'), dbus.String(u'. GThemedIcon drive-optical-symbolic drive-symbolic drive-optical drive'), dbus.Boolean(True), dbus.Boolean(False), dbus.Boolean(False), dbus.Boolean(True), dbus.Boolean(True), dbus.Boolean(False), dbus.Boolean(False), dbus.Boolean(False), dbus.UInt32(1L), dbus.Array([dbus.String(u'0x563bdf144470')], signature=dbus.Signature('s')), dbus.Dictionary({dbus.String(u'unix-device'): dbus.String(u'/dev/sr0')}, signature=dbus.Signature('ss')), dbus.String(u'00coldplug/11removable/sr0'), dbus.Dictionary({dbus.String(u'is-removable'): dbus.Boolean(True, variant_level=1)}, signature=dbus.Signature('sv'))), signature=None))
+************************************************************
+KWARGS
+ {'member': 'DriveChanged', 'dbus_interface': 'org.gtk.Private.RemoteVolumeMonitor'}
+--------------------------------------------------------------------------------
+ARGS
+ (dbus.String(u'org.gtk.vfs.UDisks2VolumeMonitor'), dbus.String(u'0x563bdf166200'), dbus.Struct((dbus.String(u'0x563bdf166200'), dbus.String(u'Toshiba SuperMultiPA3761'), dbus.String(u'. GThemedIcon drive-optical drive'), dbus.String(u'. GThemedIcon drive-optical-symbolic drive-symbolic drive-optical drive'), dbus.Boolean(True), dbus.Boolean(False), dbus.Boolean(False), dbus.Boolean(True), dbus.Boolean(True), dbus.Boolean(False), dbus.Boolean(False), dbus.Boolean(False), dbus.UInt32(1L), dbus.Array([], signature=dbus.Signature('s')), dbus.Dictionary({dbus.String(u'unix-device'): dbus.String(u'/dev/sr0')}, signature=dbus.Signature('ss')), dbus.String(u'00coldplug/11removable/sr0'), dbus.Dictionary({dbus.String(u'is-removable'): dbus.Boolean(True, variant_level=1)}, signature=dbus.Signature('sv'))), signature=None))
+************************************************************
+KWARGS
+ {'member': 'DriveChanged', 'dbus_interface': 'org.gtk.Private.RemoteVolumeMonitor'}
+--------------------------------------------------------------------------------

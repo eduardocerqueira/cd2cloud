@@ -1,0 +1,9 @@
+#TODO
+
+treat KeyboardInterrupt and terminate program imediatly
+gnome notification  [cd2cloud.core.Notification.gnome:29] gnome notification sent for Paulo Moura & Yamand
+code-check
+copr rpmbuild
+documentation
+remove code duplicated for CDDB
+validation cd2cloud.conf
