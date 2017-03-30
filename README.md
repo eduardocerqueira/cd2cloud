@@ -24,7 +24,25 @@ USAGE:
 
 Basic execution::
 
-	cd2cloud --conf /home/eduardo/cd2cloud.conf
+	cd2cloud --conf /home/eduardo/cd2cloud.conf &
+
+
+The command above will start cd2cloud in background and it will be listening for all events filtered by CDROM directly in your kernel from uDev layer.
+Whenever a Audio CD is inserted and CDROM drive is closed cd2cloud starts ripping the CD based in your abcde configuration and eject CDROM automatically.
+The program keeps running and only thing you need to do is insert the next audio CD into CDROM drive and close it.
+
+The image below is the alpha test for **cd2cloud** in an afternon my wife ripped **more than 25 audio CDs** with a simple task just to remove
+the previous CD and insert a new one.
+
+![Preview](https://github.com/eduardocerqueira/cd2cloud/raw/master/docs/source/_static/cd2cloud_stack_cds_ripped_1.jpg)
+
+Also cd2cloud logs all information to a file and you can::
+
+	tail -f /tmp/cd2cloud.log
+
+to see all details what is going on behind the scene, like image showing below
+
+![Preview](https://github.com/eduardocerqueira/cd2cloud/raw/master/docs/source/_static/cd2cloud_console.png)
 
 
 ## LINKS
