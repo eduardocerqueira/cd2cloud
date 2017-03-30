@@ -115,21 +115,6 @@ To install from latest RPM:
 	$ sudo dnf install https://copr-be.cloud.fedoraproject.org/results/eduardocerqueira/cd2cloud/fedora-24-x86_64/00474191-cd2cloud/cd2cloud-0.0.1-1.x86_64.rpm
 
 
-sample of reports:
-
-Report with 2 executions appended:
-![Preview](https://github.com/eduardocerqueira/cd2cloud/raw/master/docs/source/_static/1_report.png)
-
-Report with 1 execution:
-![Preview](https://github.com/eduardocerqueira/cd2cloud/raw/master/docs/source/_static/report_append.png)
-
-Listing DST with .sh files migrated from SRC and all links created from SRC to DST:
-
-![Preview](https://github.com/eduardocerqueira/cd2cloud/raw/master/docs/source/_static/src_link.png)
-
-![Preview](https://github.com/eduardocerqueira/cd2cloud/raw/master/docs/source/_static/dst_migrated.png)
-
-
 ## MORE INFO
 
 For others topics listed below, please generate the sphinx doc in your local machine running the command:
