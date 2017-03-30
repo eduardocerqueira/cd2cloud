@@ -1,5 +1,6 @@
-
 ![copr build](https://copr.fedorainfracloud.org/coprs/eduardocerqueira/cd2cloud/package/cd2cloud/status_image/last_build.png)
+
+<a href="https://copr.fedorainfracloud.org/coprs/eduardocerqueira/cd2cloud/package/cd2cloud/"><img src="https://copr.fedorainfracloud.org/coprs/eduardocerqueira/cd2cloud/package/cd2cloud/status_image/last_build.png" /></a>
 
 # cd2cloud
 
