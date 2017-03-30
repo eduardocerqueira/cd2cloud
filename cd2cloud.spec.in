@@ -7,14 +7,18 @@ License:	GPL3+
 Source0:	http://github.com/eduardocerqueira/cd2cloud/%{name}-%{version}.tar.gz
 
 BuildRequires:  python-setuptools
+BuildRequires:  rpm-build
 Requires:       python
 Requires:		abcde
 Requires:		pycdio
-Requires:		python2-libdiscid
+Requires:		python-libdiscid
 Requires:		python-CDDB
 Requires:		libglyr
 Requires:		glyr
 Requires:		ImageMagick
+Requires:		python2-pyudev
+Requires:		lame
+Requires:		python-eyed3
 
 %global debug_package %{nil}
 
