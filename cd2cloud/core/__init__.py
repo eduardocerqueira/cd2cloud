@@ -100,7 +100,7 @@ class CDConverter():
                 rip_workdir = get_config(self.args.conf, 'Ripping', 'workdir')
                 ripper = Worker(rip_workdir)
                 cd2cloud_cfg = get_config(self.args.conf, 'Ripping', 'abcde_conf')
-                cmd = 'abcde -c %s -j 5 -N' % cd2cloud_cfg
+                cmd = '/usr/bin/abcde -c %s -j 5 -N' % cd2cloud_cfg
 
                 #ripper.thread(cmd)
                 ripper.run_cmd(cmd)
